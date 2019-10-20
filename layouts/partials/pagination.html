@@ -1,0 +1,14 @@
+<nav id="pagination" class="pagination" role="pagination">
+	<div class="inner">
+	{{if .Paginator.HasPrev}}
+		{{ $prevUrl := delimit (slice .Site.BaseURL .Paginator.Prev.URL) "" }}
+	  <a class="pagination-item pagination-next" href="{{ $prevUrl }}"><i class="icon-arrow-left"></i> <span>上一页</span></a>
+	{{end}}
+		<span class="pagination-info">{{ .Paginator.PageNumber }}/{{.Paginator.TotalPages}}</span>
+	{{if .Paginator.HasNext}}
+		{{ $nextUrl := delimit (slice .Site.BaseURL .Paginator.Next.URL) "" }}
+	  <a class="pagination-item pagination-prev" href="{{ $nextUrl }}"><span>下一页</span> <i class="icon-arrow-right"></i></a>
+	{{end}}
+		<div class="clear"></div>
+	</div>
+</nav>
