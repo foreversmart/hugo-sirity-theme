@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/foreversmart/hugo-sirity-theme/blob/master/LICENSE"
 description = ""
 homepage = "https://github.com/foreversmart/hugo-sirity-theme"
-tags = [Blog", "Responsive"]
+tags = ["Blog", "Responsive"]
 features = ["", ""]
 min_version = 1.0
 
